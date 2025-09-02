@@ -1,0 +1,19 @@
+.page-not-found-page {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--index) * 1);
+}
+
+.page-not-found-page h1 {
+    font-family: 'f2', sans-serif;
+    font-weight: normal;
+    font-size: calc(var(--index) * 12);
+}
+
+.page-not-found-page p {
+    opacity: .7;
+    font-size: calc(var(--default-text-size));
+}

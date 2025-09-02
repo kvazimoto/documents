@@ -1,0 +1,53 @@
+.mini-about-text-block {
+    background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    padding: calc(var(--default-section-padding) * 3);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 1);
+}
+
+.mini-about-text-block-title h1 {
+    font-family: 'f2', sans-serif;
+    font-weight: normal;
+    font-size: calc(var(--default-title-size) * .65);
+}
+
+.mini-about-text-block-content {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 1);
+}
+
+.mini-about-text-block-content-punct {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--index) * .5);
+}
+
+.mini-about-text-block-content-punct img {
+    width: calc(var(--index) * .8);
+}
+
+.mini-about-text-block-content-punct p {
+    font-size: var(--default-text-size);
+}
+
+
+@media (max-width: 960px) {
+    .mini-about-text-block {
+        padding: calc(var(--index) * 3) calc(var(--index) * 1);
+        gap: calc(var(--index) * 2);
+    }
+
+    .mini-about-text-block-title h1 {
+        font-size: calc(var(--default-title-size));
+    }
+
+    .mini-about-text-block-content-punct p {
+        font-size: calc(var(--default-text-size) * 1.1);
+    }
+
+    
+}

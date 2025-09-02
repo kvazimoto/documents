@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'f1', sans-serif;
+}
+
+:root {
+  --black-color: #08090D;
+  --main-color: #3457D5;
+  --main-color-hover: #233fa3;
+  --telegram-color: #0a8cce;
+  --telegram-color-hover: #02689b;
+
+  --index: calc(1vh + 1vw);
+  --default-text-size: clamp(12px, calc(var(--index) * .58), 16.5px);
+  --default-title-size: clamp(12px, calc(var(--index) * 1.55), 45px);
+
+  --default-section-padding: clamp(9px, calc(var(--index) * .3), 15px);
+}
+
+body {
+  padding: clamp(7px, calc(var(--index) * .5), 15px) clamp(7px, calc(var(--index) * .5), 15px) 0 clamp(7px, calc(var(--index) * .5), 15px);
+  background: var(--black-color);
+}
+
+@font-face {
+  font-family: 'f1';
+  src: url('../fonts/Inter Tight/InterTight-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'f2';
+  src: url('../fonts/Inter Tight/InterTight-Bold.ttf');
+}
+
+
+.default-sections-properties {
+  padding: calc(var(--default-section-padding) * 4);
+}
+
+
+@media (max-width: 960px) {
+    :root {
+    --default-text-size: clamp(14px, calc(var(--index) * .58), 16.5px);
+    --default-title-size: clamp(17px, calc(var(--index) * 2), 45px);
+  }
+
+  body {
+    padding: 0;
+    background: var(--black-color);
+  }
+}

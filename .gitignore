@@ -1,0 +1,21 @@
+# --- Python / Django ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3-journal
+*.log
+
+# Виртуальное окружение
+venv/
+.env/
+
+# --- React (Vite) ---
+frontend/node_modules/
+frontend/dist/
+*.local
+
+# --- IDE / редакторы ---
+.vscode/
+.idea/
+*.swp

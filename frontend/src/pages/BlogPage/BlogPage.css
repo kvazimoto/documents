@@ -1,0 +1,5 @@
+@media (max-width: 1300px) {
+    .blog-page-section-media {
+        padding: calc(var(--default-section-padding) * 2);
+    }
+}

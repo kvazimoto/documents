@@ -1,0 +1,88 @@
+.blog-page-section-news-container-item {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 1);
+    background: rgba(255, 255, 255, .05);
+    height: fit-content;
+    border-radius: 10px;
+    padding: calc(var(--default-section-padding) * 2);
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.blog-page-section-news-container-item img {
+    width: 100%;
+}
+
+.blog-page-section-news-container-item-img-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: calc(var(--index) * 7);
+    border-radius: 10px;
+}
+
+.blog-page-section-news-container-item-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(10px, calc(var(--index) * .5), 40px);
+}
+
+.blog-page-section-news-container-item-tags span {
+    display: block;
+    text-decoration: none;
+    padding: clamp(5px, calc(var(--index) * .3), 20px) clamp(15px, calc(var(--index) * 1), 70px);
+    border-radius: 100px;
+    background: #444;
+    color: #ddd;
+    transition: .2s ease;
+    border: 1px solid rgba(255, 255, 255, .2);
+    cursor: pointer;
+    font-size: calc(var(--default-text-size));
+
+    &:hover {
+        transition: .2s ease;
+        background: var(--main-color);
+        border: 1px solid var(--main-color);
+        color: #fff;
+    }
+}
+
+
+.blog-page-section-news-container-item-title a {
+    font-family: 'f2', sans-serif;
+    font-weight: normal;
+    font-size: clamp(20px, calc(var(--default-title-size) * .7), 60px);
+    text-decoration: none;
+    transition: .2s all ease;
+
+    &:hover {
+        color: var(--main-color);
+        transition: .2s all ease;
+    }
+}
+
+.blog-page-section-news-container-item-mini-description {
+    font-size: calc(var(--default-text-size) * 1.1);
+    opacity: .5;
+}
+
+.blog-page-section-news-container-item-date {
+    font-family: 'f2', sans-serif;
+    font-weight: normal;
+    font-size: calc(var(--default-text-size) * 1.1);
+    opacity: .7;
+}
+
+
+@media (max-width: 800px) {
+    .blog-page-section-news-container-item {
+        padding: calc(var(--default-section-padding));
+        gap: clamp(20px, calc(var(--index) * 1), 40px);
+    }
+
+    .blog-page-section-news-container-item-img-con {
+        max-height: calc(var(--index) * 12);
+    }
+}

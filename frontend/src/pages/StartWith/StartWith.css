@@ -1,0 +1,12 @@
+.start-with-form-section {
+    display: flex;
+    justify-content: center;
+    padding-top: calc(var(--index) * 2);
+}
+
+
+@media (max-width: 800px) {
+    .start-with-form-section {
+        padding: calc(var(--index) * 2) calc(var(--default-section-padding) * 1);
+    }
+}

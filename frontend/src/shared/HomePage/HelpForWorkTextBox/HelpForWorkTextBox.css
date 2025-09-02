@@ -1,0 +1,30 @@
+.help-for-work-text-box {
+    background: rgba(0, 0, 0, .25);
+    backdrop-filter: blur(30px);
+    padding: calc(var(--index) * 1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 2.5);
+}
+
+.help-for-work-text-box img {
+    width: calc(var(--index) * 1.5);
+}
+
+.help-for-work-text-box-text p {
+    font-size: calc(var(--default-text-size) * 1.2);
+    font-family: 'f2', sans-serif;
+}
+
+
+@media (max-width: 960px) {
+    .help-for-work-text-box img {
+        width: 30px;
+    }
+
+    .help-for-work-text-box-text p {
+        font-family: 'f1';
+        font-size: calc(var(--default-title-size) * .65);
+    }
+}

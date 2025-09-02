@@ -1,0 +1,16 @@
+.default-button {
+    display: block;
+    text-decoration: none;
+    background: var(--main-color);
+    text-align: center;
+    font-size: var(--default-text-size);
+    border-radius: clamp(3px, calc(var(--index) * .3), 10px);
+    padding: clamp(14px, calc(var(--index) * .5), 40px);
+    transition: .2s ease;
+    
+    &:hover {
+        background: var(--main-color-hover);
+        transition: .2s ease;
+        cursor: pointer;
+    }
+}

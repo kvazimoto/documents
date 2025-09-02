@@ -1,0 +1,96 @@
+.home-page-services-list {
+    padding: calc(var(--default-section-padding) * 4);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 2);
+}
+
+.home-page-services-list-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-page-services-list-title-left h1 {
+    font-family: 'f2', sans-serif;
+    font-weight: normal;
+    font-size: var(--default-title-size);
+}
+
+.home-page-services-list-title-right {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 1);
+}
+
+.home-page-services-list-title-right h2 {
+    font-family: 'f2', sans-serif;
+    font-weight: normal;
+    font-size: calc(var(--default-text-size) * 1.7);
+}
+
+.home-page-services-list-title-right-text-conteiner {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--index) * 1);
+}
+
+.home-page-services-list-title-right-text-conteiner img {
+    width: calc(var(--index) * 5.5);
+}
+
+.home-page-services-list-title-right-text-conteiner p {
+    font-size: calc(var(--default-text-size) * 1.1);
+    opacity: .5;
+    line-height: 1.5;
+}
+
+.home-page-services-list-content {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 1);
+}
+
+.home-page-services-list-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: calc(var(--index) * 1);
+    grid-row-gap: calc(var(--index) * 1);
+}
+
+
+
+
+
+
+@media (max-width: 960px) {
+    .home-page-services-list {
+        padding: calc(var(--default-section-padding));
+    }
+
+    .home-page-services-list-title {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(15px, calc(var(--index) * 1), 25px);
+    }
+
+    .home-page-services-list-title h1 {
+        font-size: calc(var(--default-title-size) * 1.2);
+    }
+
+    .home-page-services-list-title-right-text-conteiner {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .home-page-services-list-title-right h2 {
+        font-family: 'f1', sans-serif;
+    }
+
+    .home-page-services-list-title-right-text-conteiner img {
+        width: clamp(50px, calc(var(--index) * 10), 150px);
+    }
+
+    .home-page-services-list-content-grid {
+        grid-template-columns: 1fr;
+    }
+}

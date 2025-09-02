@@ -1,0 +1,5 @@
+.pages-container {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 3);
+}

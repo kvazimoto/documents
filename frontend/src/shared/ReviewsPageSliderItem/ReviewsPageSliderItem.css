@@ -1,0 +1,43 @@
+.reviews-page-review-card {
+    width: 100%;
+    min-height: clamp(460px, calc(var(--index) * 23), 750px);
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.reviews-page-video-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.reviews-page-review-video {
+    width: 100%;
+}
+
+.reviews-page-custom-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--main-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: clamp(40px, calc(var(--index) * 2), 60px);
+   height: clamp(40px, calc(var(--index) * 2), 60px);
+   border-radius: 50%;
+   font-size: calc(var(--default-text-size) * 1);
+}
+
+
+.reviews-page-review-text p, .reviews-page-review-text span {
+    color: #000;
+}
+
+.reviews-page-review-text {
+    padding: calc(var(--default-section-padding)* 2);
+}

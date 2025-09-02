@@ -1,0 +1,111 @@
+.start-with-form-container-question-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: calc(var(--index) * 1);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.different-answer-input {
+    all: unset;
+    display: block;
+    width: calc(80% - calc(var(--index) * .6));
+    margin: 0 auto;
+    border: 1px solid rgba(255,255,255, .1);
+    padding: calc(var(--index) * .3);
+    border-radius: 5px;
+}
+
+.start-with-form-container-question-grid input {
+    display: none;
+}
+
+.start-with-form-container-question-grid label {
+    border: 1px solid rgba(255,255,255, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--index) * .4);
+    border-radius: 5px;
+    opacity: .7;
+    cursor: pointer;
+    transition: .2s all ease;
+}
+
+.start-with-form-container-question-grid label:has(input:checked) {
+    background: var(--main-color);
+    opacity: 1;
+    transition: .2s all ease;
+}
+
+.start-with-form-container-question-text-input {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.start-with-form-container-question-text-input input {
+    all: unset;
+    border: 1px solid rgba(255,255,255, .1);
+    width: 100%;
+    padding: calc(var(--index) * .3) 0 calc(var(--index) * .3) calc(var(--index) * .3);
+    border-radius: 5px;
+    display: block;
+}
+
+.start-with-form-container-question-text-input input:focus {
+    border-color: #007bff;
+}
+
+.start-with-form-container-question-text-input input:not(:placeholder-shown) {
+    border-color: #007bff; 
+}
+
+
+
+.start-with-form-container-question-text-area-input {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.start-with-form-container-question-text-area-input textarea {
+    all: unset;
+    border: 1px solid rgba(255,255,255, .1);
+    width: 100%;
+    padding: calc(var(--index) * .3) 0 calc(var(--index) * .3) calc(var(--index) * .3);
+    border-radius: 5px;
+    display: block;
+    min-height: calc(var(--index) * 3);
+}
+
+.start-with-form-container-question-text-area-input textarea:focus {
+    border-color: #007bff;
+}
+
+.start-with-form-container-question-text-area-input textarea:not(:placeholder-shown) {
+    border-color: #007bff; 
+}
+
+
+
+
+@media (max-width: 800px) {
+    .start-with-form-container-question-grid, 
+    .start-with-form-container-question-text-input,
+    .start-with-form-container-question-text-area-input {
+        width: 100%;
+    }
+
+    .start-with-form-container-question-grid label {
+        padding: calc(var(--index) * .4);
+        min-height: calc(var(--index) * 4);
+    }
+
+    .start-with-form-container-question-text-input input,
+    .start-with-form-container-question-text-area-input textarea {
+        padding: calc(var(--index) * 2) calc(var(--index) * 1);
+        max-width: calc(100% - calc(var(--index) * 2));
+        white-space: wrap;
+    }
+}
+
+

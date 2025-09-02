@@ -1,0 +1,12 @@
+.program-list-section {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 2);
+}
+
+@media (max-width: 1300px) {
+    .program-list-section-media {
+        padding: calc(var(--default-section-padding) * 2);
+        gap: calc(var(--index) * 4);
+    }
+}

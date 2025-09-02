@@ -1,0 +1,3 @@
+.default-skeep-size-block {
+    min-height: clamp(50px, calc(var(--index) * 3), 200px);
+}

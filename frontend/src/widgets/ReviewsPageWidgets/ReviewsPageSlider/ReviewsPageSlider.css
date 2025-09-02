@@ -1,0 +1,13 @@
+.reviews-page-slider-swiper {
+    gap: calc(var(--index) * .3);
+}
+
+.margit-top-for-btn {
+    margin-top: calc(var(--index) * 2);
+}
+
+@media (max-width: 800px) {
+    .reviews-page-slider {
+        padding: calc(var(--default-section-padding) * 1);
+    }
+}

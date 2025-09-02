@@ -1,0 +1,6 @@
+#content {
+    background: var(--black-color);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}

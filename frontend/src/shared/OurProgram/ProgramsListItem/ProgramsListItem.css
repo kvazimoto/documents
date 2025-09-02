@@ -1,0 +1,136 @@
+.program-list-section-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: calc(var(--default-section-padding) * 3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.program-list-section-item-index {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, calc(var(--index) * 1), 40px);
+    position: relative;
+    z-index: 3;
+}
+
+.program-list-section-item-blub {
+    width: calc(var(--index) * 8);
+    height: calc(var(--index) * 8);
+    background: var(--main-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    filter: blur(180px);
+}
+
+.program-list-section-item-top-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.program-list-section-item-top-section-left h1,
+.program-list-section-item-top-section-right h1 {
+    font-weight: normal;
+    font-size: calc(var(--default-text-size) * 1.1);
+    opacity: .7;
+}
+
+.program-list-section-item-top-section-left,
+.program-list-section-item-top-section-right {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 1);
+}
+
+.program-list-section-item-top-section-left-con {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--index) * 1);
+}
+
+.program-list-section-item-top-section-left-con img {
+    width: calc(var(--index) * 3);
+}
+
+.program-list-section-item-top-section-left-con p {
+    font-size: calc(var(--default-text-size) * 1.1);
+}
+
+.program-list-section-item-top-section-right-con p {
+    font-size: calc(var(--default-text-size) * 1);
+    line-height: 1.5;
+}
+
+.program-list-section-item-name-way h1 {
+    font-family: 'f2';
+    font-weight: normal;
+    width: 35%;
+    line-height: 1.3;
+}
+
+.program-list-section-item-dop-info {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * .5);
+}
+
+.program-list-section-item-dop-info p {
+    font-size: calc(var(--default-text-size) * 1.1);
+    opacity: .7;
+}
+
+.program-list-section-item-dop-info h1 {
+    font-family: 'f2';
+    font-weight: normal;
+    font-size: clamp(20px, calc(var(--default-title-size) * .7), 60px);
+}
+
+
+.program-list-section-item-description {
+    font-size: calc(var(--default-text-size));
+}
+
+
+
+
+.second-card-name-way {
+    opacity: 1 !important;
+    font-family: 'f2', sans-serif;
+    font-weight: normal;
+    font-size: calc(var(--default-title-size) * .6) !important;
+}
+
+
+
+
+@media (max-width: 1300px) {
+
+    .program-list-section-item {
+        padding: calc(var(--default-section-padding) * 1);
+    }
+
+    .program-list-section-item-top-section h1 {
+        font-size: calc(var(--default-text-size));
+    }
+
+    .program-list-section-item-name-way h1 {
+        width: 100%;
+    }
+
+    .program-list-section-item-top-section {
+        grid-template-columns: .8fr 1fr;
+        grid-column-gap: clamp(15px, calc(var(--index) * 1), 40px);
+    }
+
+    .second-card-name-way {
+        font-size: clamp(20px, calc(var(--index) * 2), 60px) !important;
+    }
+}

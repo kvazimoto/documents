@@ -1,0 +1,31 @@
+.help-for-work-home-page {
+    padding: 0 calc(var(--default-section-padding) * 4);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 2);
+}
+
+.help-for-work-home-page-content {
+    padding: calc(var(--index) * 2);
+    background-image: url('../../../app/images/2.jpg');
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: calc(var(--index) * 1);
+}
+
+@media (max-width: 960px) {
+    .help-for-work-home-page {
+        padding: calc(var(--default-section-padding));
+    }
+
+    .help-for-work-home-page-content {
+        grid-template-columns: 1fr;
+        grid-row-gap: calc(var(--index) * 1);
+        padding: calc(var(--index) * 3) calc(var(--index) * 1);
+    }
+}
